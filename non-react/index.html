@@ -1,0 +1,13 @@
+<body>
+  <textarea id="text"></textarea>
+  <span id="count">0/100자</span>
+
+  <script>
+    const text = document.getElementById("text");
+    const count = document.getElementById("count");
+
+    text.addEventListener("input", (e) => {
+      count.textContent = `${text.value.length}/100자`;
+    });
+  </script>
+</body>
